@@ -140,11 +140,12 @@ main {
                 color: #000000;
             }
 
-            a:not(:last-child) .restaurant {
+            .restaurant:not(:last-child) {
                 margin-bottom: 18px;
             }
 
             .restaurant {
+                position: relative;
                 background-color: #FFFFFF;
                 border-radius: 15px;
                 overflow: hidden;
@@ -166,10 +167,37 @@ main {
                 }
 
                 div {
-                    position: relative;
                     padding: 16px 13px;
                     display: flex;
                     flex-direction: column;
+                }
+
+                input {
+                    display: none;
+                }
+
+                input + label i {
+                    position: absolute;
+                    right: 25px;
+                    bottom: 22px;
+                    font-size: 30px;
+                    cursor: pointer;
+
+                    &.fa-solid {
+                        color: transparent;
+                        background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+                        background-clip: text;
+                    }
+                }
+
+                input:checked + label {
+                    i.fa-regular { display: none; }
+                    i.fa-solid { display: inline; }
+                }
+
+                input:not(:checked) + label {
+                    i.fa-regular { display: inline; }
+                    i.fa-solid { display: none; }
                 }
             }
 
