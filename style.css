@@ -18,6 +18,11 @@ body {
     background-color: var(--color-background);
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
 section {
     padding: 60px 17px;
 
@@ -111,6 +116,10 @@ main {
             list-style: none;
             padding-left: 14px;
 
+            @media screen and (min-width: 870px) {
+                flex-direction: row;
+            }
+
             li {
                 width: 100%;
                 padding: 20px;
@@ -118,6 +127,10 @@ main {
                 border-radius: 20px;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
                 font-weight: 500;
+
+                /* @media screen and (min-width: 768px) {
+                    width: 100%;
+                } */
 
                 i {
                     color: #7E7E7E;
@@ -144,13 +157,20 @@ main {
 
 
         .restaurants {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+
+            @media screen and (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (min-width: 1024px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
 
             a {
                 color: #000000;
-            }
-
-            .restaurant:not(:last-child) {
-                margin-bottom: 18px;
             }
 
             .restaurant {
