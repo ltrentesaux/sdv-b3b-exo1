@@ -4,6 +4,9 @@
     --color-green-dark: #008766;
 
     --color-background: var(--color-grey-light);
+
+    --font-default: "Roboto", serif;
+    --font-title: "Shrikhand", serif;
 }
 
 * {
@@ -14,7 +17,7 @@
 }
 
 body {
-    font-family: "Roboto", serif;
+    font-family: var(--font-default);
     background-color: var(--color-background);
 }
 
@@ -22,6 +25,41 @@ body {
     margin: 0 auto;
     max-width: 1024px;
 }
+
+
+/*
+ * Composant Favoris (coeur cliquable)
+ */
+div.favorite {
+    input {
+        display: none;
+    }
+
+    input + label i {
+        /* position: absolute;
+        right: 25px;
+        bottom: 22px; */
+        font-size: 30px;
+        cursor: pointer;
+
+        &.fa-solid {
+            color: transparent;
+            background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            background-clip: text;
+        }
+    }
+
+    input:checked + label {
+        i.fa-regular { display: none; }
+        i.fa-solid { display: inline; }
+    }
+
+    input:not(:checked) + label {
+        i.fa-regular { display: inline; }
+        i.fa-solid { display: none; }
+    }
+}
+
 
 section {
     padding: 60px 17px;
@@ -44,7 +82,7 @@ header {
         z-index: 999;
 
         #main-logo {
-            font-family: "Shrikhand", serif;
+            font-family: var(--font-title);
             font-weight: 400;
             font-style: normal;
             font-size: 30px;
@@ -199,7 +237,7 @@ main {
                     }
                 }
 
-                div:last-child {
+                div.title {
                     padding: 16px 13px;
                     display: flex;
                     flex-direction: column;
@@ -215,32 +253,10 @@ main {
                     font-weight: 300;
                 }
 
-                input {
-                    display: none;
-                }
-
-                input + label i {
+                .favorite {
                     position: absolute;
                     right: 25px;
                     bottom: 22px;
-                    font-size: 30px;
-                    cursor: pointer;
-
-                    &.fa-solid {
-                        color: transparent;
-                        background: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-                        background-clip: text;
-                    }
-                }
-
-                input:checked + label {
-                    i.fa-regular { display: none; }
-                    i.fa-solid { display: inline; }
-                }
-
-                input:not(:checked) + label {
-                    i.fa-regular { display: inline; }
-                    i.fa-solid { display: none; }
                 }
             }
 
@@ -249,6 +265,78 @@ main {
     }
 
 }
+
+
+.resto-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-title);
+    font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        gap: 25px;
+        font-size: 28px;
+    }
+}
+
+.menu-form {
+
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        border: 0;
+        width: 100%;
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            overflow: hidden;
+
+            .label-title {
+                display: flex;
+                flex-direction: column;
+                padding: 5px 10px;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .label-price {
+                flex-direction: row;
+
+                span, div {
+                    padding: 5px 10px;
+                }
+
+                div {
+                    width: 59px;
+                    background-color: var(--color-green-light);
+                }
+            }
+        }
+
+        input + label .label-price {
+            position: relative;
+            display: flex;
+            left: 59px;
+            transition: left .5s;
+        }
+
+        input:checked + label .label-price {
+            left: 0;
+        }
+    }
+}
+
 
 footer {
     color: #FFFFFF;

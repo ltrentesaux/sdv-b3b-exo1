@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La palette du goût</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0ed4d5c1f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div>
+            <span id="main-logo">ohmyfood</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- <section>
+            <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt="Image d'une spécialité de La palette du goût">
+        </section> -->
+        <section>
+            <div class="resto-header">
+                <h1>La palette du goût</h1>
+                <div class="favorite">
+                    <input type="checkbox" id="favorite" />
+                    <label for="favorite">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </label>
+                </div>
+            </div>
+            <form class="menu-form" method="GET" action="#">
+                <fieldset class="menu-section">
+                    <legend>Entrées</legend>
+
+                    <div>
+                      <input type="checkbox" id="entree1" name="entree1" checked />
+                      <label for="entree1">
+                        <div class="label-title">
+                            <span>Fricassée d'escargots</span>
+                            <span>Au piment d'espelette au piment</span>
+                        </div>
+                        <div class="label-price">
+                            <span>25€</span>
+                            <div>X</div>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" id="entree2" name="entree2" />
+                      <label for="entree2">
+                        <span>Fricassée d'escargots</span>
+                        <div>
+                            <span>Au piment d'espelette</span>
+                            <span>25€</span>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="entree3" name="entree3" />
+                        <label for="entree3">
+                            <span>Fricassée d'escargots</span>
+                            <div>
+                                <span>Au piment d'espelette</span>
+                                <span>25€</span>
+                            </div>
+                        </label>
+                      </div>
+                  </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
