@@ -346,7 +346,6 @@ main {
     animation-name: spin;
     animation-duration: 1000ms;
     animation-iteration-count: infinite;
-    
 }
 
 @keyframes spin {
