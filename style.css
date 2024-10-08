@@ -291,9 +291,8 @@ main {
 
 
 .resto-main{
-    background-color: #F6F6F6;
-    border-radius: 25px;
-
+    background-color: var(--color-grey-light);
+    border-radius: 25px 25px 0 0;
 
     @media screen and (min-width: 1440px) {
         width: 1055px;
@@ -331,9 +330,8 @@ main {
         text-align: left;
 
         @media screen and (min-width: 1440px) {
-            padding: 0px 210px;;
+            padding: 0px 210px;
         }
-
 
         input {
             display: none;
