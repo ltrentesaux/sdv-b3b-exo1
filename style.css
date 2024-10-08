@@ -287,8 +287,6 @@ main {
         flex-direction: column;
         gap: 10px;
         text-align: left;
-        border: 0;
-        width: 100%;
 
         input {
             display: none;
@@ -297,42 +295,47 @@ main {
         label {
             display: flex;
             flex-direction: row;
-            width: 100%;
+            justify-content: space-between;
             background-color: #FFFFFF;
             border-radius: 15px;
             overflow: hidden;
 
             .label-title {
-                display: flex;
-                flex-direction: column;
                 padding: 5px 10px;
-                white-space: nowrap;
                 overflow: hidden;
+                div {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
 
             .label-price {
+                display: flex;
                 flex-direction: row;
-
-                span, div {
-                    padding: 5px 10px;
-                }
-
+                background-color: #FFFFFF;
                 div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 10px;
+                }
+                div:nth-child(2) {
                     width: 59px;
+                    color: #FFFFFF;
                     background-color: var(--color-green-light);
                 }
             }
         }
 
         input + label .label-price {
-            position: relative;
-            display: flex;
-            left: 59px;
-            transition: left .5s;
+            margin-right: -59px;
+            transition: margin-right .5s;
         }
 
+        input + label:hover .label-price,
         input:checked + label .label-price {
-            left: 0;
+            margin-right: 0;
         }
     }
 }
