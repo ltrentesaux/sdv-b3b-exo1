@@ -1,5 +1,6 @@
 :root {
-    --color-grey-light: #D2D2D2;
+    --color-grey-light: #F6F6F6;
+;
     --color-green-light: #99E2D0;
     --color-green-dark: #008766;
 
@@ -62,7 +63,7 @@ div.favorite {
 
 
 section {
-    padding: 60px 17px;
+    padding: 40px 17px;
 
     h2 {
         margin-bottom: 25px;
@@ -123,22 +124,43 @@ main {
         text-align: center;
 
         h1 {
-            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 700;
+            @media screen and (min-width: 768px) {
+                font-size: 40px;
+            }
+
         }
 
         p {
-            margin-bottom: 25px;
+            margin-bottom: 27px;
+            font-weight: 300;
+
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+            }
         }
 
         a {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
             padding: 13px 19px;
             color: #FFFFFF;
             background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%); */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
             border-radius: 25px;
+            /*transform: matrix(1, 0, 0, -1, 0, 0);*/
         }
 
         a:hover {
             opacity: 85%;
+            /* Button Gradient */
+            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            /* Shadow/Button */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
         }
     }
 
