@@ -1,61 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palette du goût</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/0ed4d5c1f3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ed4d5c1f3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <header>
-        <div>
-            <a href="/index.html" class="headerClass"><img src="/images/restaurants/icons8-home.svg" alt="Icône Home"></a>
-            <span id="main-logo">ohmyfood</span>
-        </div>
+      <div>
+        <a href="/index.html" class="headerClass">
+          <img src="/images/restaurants/icons8-home.svg" alt="Icône Home">
+        </a>
+        <span id="main-logo">ohmyfood</span>
+      </div>
     </header>
-
     <main>
-        <section class ="photo_resto">
-            <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt=Image d'une spécialité de La palette du goût">
-        </section>
-        <section class="resto-main">
-            <div class="resto-header">
-                <h1>La palette du goût</h1>
-                <div class="favorite">
-                    <input type="checkbox" id="favorite" />
-                    <label for="favorite">
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </label>
+      <section class="photo_resto">
+        <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt=Image d'une spécialité de La palette du goût">
+      </section>
+      <section class="resto-main">
+        <div class="resto-header">
+          <h1>La palette du goût</h1>
+          <div class="favorite">
+            <input type="checkbox" id="favorite" />
+            <label for="favorite">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </label>
+          </div>
+        </div>
+        <form class="menu-form" method="GET" action="#">
+          <div class="menu-section">
+            <h2>Entrées</h2>
+            <div class="box">
+              <input type="checkbox" id="entree1" name="entree1" />
+              <label for="entree1">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
                 </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
             </div>
-            <form class="menu-form" method="GET" action="#">
-                <div class="menu-section">
-                    <h2>Entrées</h2>
-
-                    <div>
-                      <input type="checkbox" id="entree1" name="entree1" />
-                      <label for="entree1">
-                        <div class="label-title">
-                            <div>Fricassée d'escargots</div>
-                            <div>Au piment d'espelette au piment</div>
-                        </div>
-                        <div class="label-price">
-                            <div>25€</div>
-                            <div><i class="fa-solid fa-check"></i></div>
-                        </div>
-                      </label>
-                    </div>
-
-            </form>
-        </section>
+            <div class="box">
+              <input type="checkbox" id="entree2" name="entree2" />
+              <label for="entree2">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="entree3" name="entree3" />
+              <label for="entree3">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h2>Plats</h2>
+            <div class="box">
+              <input type="checkbox" id="plat1" name="plat1" />
+              <label for="plat1">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="plat2" name="plat2" />
+              <label for="plat2">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="plat3" name="plat3" />
+              <label for="plat3">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="box">
+              <input type="checkbox" id="dessert1" name="dessert1" />
+              <label for="dessert1">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="dessert2" name="dessert2" />
+              <label for="dessert2">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="box">
+              <input type="checkbox" id="dessert3" name="dessert3" />
+              <label for="dessert3">
+                <div class="label-title">
+                  <div>
+                    <h3>Fricassée d'escargots</h3>
+                  </div>
+                  <div>Au piment d'espelette au piment</div>
+                </div>
+                <div class="label-price">
+                  <div>
+                    <h3>25€</h3>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
