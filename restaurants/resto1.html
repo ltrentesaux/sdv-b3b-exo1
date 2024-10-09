@@ -22,7 +22,7 @@
     </header>
     <main>
       <section class="photo_resto">
-        <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt=Image d'une spécialité de La palette du goût">
+        <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt="Image d'une spécialité de La palette du goût">
       </section>
       <section class="resto-main">
         <div class="resto-header">
@@ -34,6 +34,32 @@
               <i class="fa-regular fa-heart"></i>
             </label>
           </div>
+        </div>
+        <button id="button-modal">Réserver</button>
+        <div id="restaurant-modal">
+            <div class="modal-container">
+                <button id="close-modal">X</button>
+                <h2>Réserver</h2>
+                <form action="" id="form1" novalidate>
+                  <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" required>
+                  </div>
+                  <label for="firstName">Prenom :</label>
+                  <input type="text" name="firstName" id="firstName" required>
+                  <label for="email">Adresse email :</label>
+                  <input type="email" name="email" id="email" required>
+                  <label for="tel">Tél :</label>
+                  <input type="tel" name="tel" id="tel" required>
+                  <label for="dateReserve">Date de réservation:</label>
+                  <input type="date" name="dateReserve" id="dateReserve" required>
+                  <label for="timeReserve">Heure de réservation :</label>
+                  <input type="time" name="timeReserve" id="timeReserve" required>
+                  <label for="nbPerson">Nombre de personnes :</label>
+                  <input type="text" name="nbPerson" id="nbPerson" required>
+                  <input type="submit" name="send" id="send">
+                </form>
+            </div>
         </div>
         <form class="menu-form" method="GET" action="#">
           <div class="menu-section">
@@ -222,5 +248,6 @@
         </form>
       </section>
     </main>
+    <script src="../index.js"></script>
   </body>
 </html>
