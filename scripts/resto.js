@@ -60,4 +60,4 @@ form1.addEventListener("submit", (event) => {
 
 // https://t.ly/UUO6_
 
-// https://gist.githubusercontent.com/baiello/a42c640d3bd6a52d965b29e3e0de6db7/raw/5b57e9cbb809c6ac531345309cc0a5febb5f141e/restaurants.json
+// https://gist.githubusercontent.com/baiello/a42c640d3bd6a52d965b29e3e0de6db7/raw/e16bf92636e44dc573074863712fd93947f7ad40/restaurants.json
