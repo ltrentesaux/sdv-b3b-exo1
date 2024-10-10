@@ -14,117 +14,67 @@
     <body>
 
 
-                <header>
-                    <div>
-                        <span id="main-logo">ohmyfood</span>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="text" value="Paris, Belleville" disabled>
-                    </div>
-                </header>
+            <header>
+                <div>
+                    <span id="main-logo">ohmyfood</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" value="Paris, Belleville" disabled>
+                </div>
+            </header>
 
-                <main>
-                    <section>
-                        <div class="container">
-                            <h1>Réservez le menu qui vous convient</h1>
-                            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                            <a class="button" href="#nosResturants">Explorer nos restaurants</a>
+            <main>
+                <section>
+                    <div class="container">
+                        <h1>Réservez le menu qui vous convient</h1>
+                        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                        <a class="button" href="#nosResturants">Explorer nos restaurants</a>
+                    </div>
+                </section>
+                <section class="section-fct">
+                    <div class="container">
+                        <h2>Fonctionnement</h2>
+                        <div>
+                            <ol>
+                                <li><i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant</li>
+                                <li><i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
+                                <li><i class="fa-solid fa-store"></i> Dégustez au restaurant</li>
+                            </ol>
                         </div>
-                    </section>
-                    <section class="section-fct">
-                        <div class="container">
-                            <h2>Fonctionnement</h2>
-                            <div>
-                                <ol>
-                                    <li><i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant</li>
-                                    <li><i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
-                                    <li><i class="fa-solid fa-store"></i> Dégustez au restaurant</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <div id="nosResturants" class="container">
-                            <h2>Restaurants</h2>
-                            <div id="restaurants" class="restaurants">
-                                <article class="restaurant">
-                                    <a href="/restaurants/resto1.html">
-                                        <div>
-                                            <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt="Image d'une spécialité de La palette du goût">
-                                            <span class="tag-new">Nouveau</span>
-                                        </div>
-                                        <div class="title">
-                                            <h1>La palette du goût</h1>
-                                            <p>Ménilmontant</p>
-                                        </div>
-                                    </a>
-                                    <div class="favorite">
-                                        <input type="checkbox" id="favorite1" />
-                                        <label for="favorite1">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </label>
-                                    </div>
-                                </article>
-                                <article class="restaurant">
-                                    <a href="#restaurants">
-                                        <div>
-                                            <img src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.avif" alt="Image d'une spécialité de La note enchantée">
-                                            <span class="tag-new">Nouveau</span>
-                                        </div>
-                                        <div class="title">
-                                            <h1>La note enchantée</h1>
-                                            <p>Charonne</p>
-                                        </div>
-                                    </a>
-                                    <div class="favorite">
-                                        <input type="checkbox" id="favorite2" />
-                                        <label for="favorite2">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </label>
-                                    </div>
-                                </article>
-                                <article class="restaurant">
-                                    <a href="#restaurants">
-                                        <div>
-                                            <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.avif" alt="Image d'une spécialité d'À la française">
-                                        </div>
-                                        <div class="title">
-                                            <h1>À la française</h1>
-                                            <p>Cité Rouge</p>
-                                        </div>
-                                    </a>
-                                    <div class="favorite">
-                                        <input type="checkbox" id="favorite3" />
-                                        <label for="favorite3">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </label>
-                                    </div>
-                                </article>
-                                <article class="restaurant">
-                                    <a href="#restaurants">
-                                        <div>
-                                            <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.avif" alt="Image d'une spécialité du Délice des sens">
-                                        </div>
-                                        <div class="title">
-                                            <h1>Le délice des sens</h1>
-                                            <p>Folie-Méricourt</p>
-                                        </div>
-                                    </a>
-                                    <div class="favorite">
-                                        <input type="checkbox" id="favorite4" />
-                                        <label for="favorite4">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                        </label>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </section>
-                </main>
+                    </div>
+                </section>
+                <section>
+                    <div id="nosResturants" class="container">
+                        <h2>Restaurants</h2>
+                        <div id="restaurants" class="restaurants"></div>
+                    </div>
+                </section>
+            </main>
+
+            <script src="/scripts/index.js"></script>
+
         </body>
     </html>
+
+<!--
+    <article class="restaurant">
+        <a href="/restaurants/resto1.html">
+            <div>
+                <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.avif" alt="Image d'une spécialité de La palette du goût">
+                <span class="tag-new">Nouveau</span>
+            </div>
+            <div class="title">
+                <h1>La palette du goût</h1>
+                <p>Ménilmontant</p>
+            </div>
+        </a>
+        <div class="favorite">
+            <input type="checkbox" id="favorite1" />
+            <label for="favorite1">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+            </label>
+        </div>
+    </article>
+-->

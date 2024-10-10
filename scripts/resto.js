@@ -48,3 +48,16 @@ form1.addEventListener("submit", (event) => {
     alert("Formulaire soumis avec succès!");
   }
 });
+
+// Nom => Min 2 charactères, lettres et - et espace
+// Prénom => Min 2 charactères, lettres et - et espace
+// Email => L'email doit être valide
+// Numéro de tel => Le tel doit être français +33XXXXXXXXX
+// Date de réservation => Dans le futur, à 3 mois maximum
+// Heure de réservation => Liste de créneaux disponibles
+// Nombre de personnes => minimum 1 personne
+// Bouton d'envoi
+
+// https://t.ly/UUO6_
+
+// https://gist.githubusercontent.com/baiello/a42c640d3bd6a52d965b29e3e0de6db7/raw/5b57e9cbb809c6ac531345309cc0a5febb5f141e/restaurants.json
